@@ -6,11 +6,7 @@ window.onload = function(){
             console.log("Se presionó un párrafo del documento");
         }
     }
-    // parrafo[0].onClick = () =>{
-    //     console.log("Clicado parrafo");
-    //     document.getElementsByTagName("p").innerHTML ="AA";
-    // }
-
+    
     const tabla2 = document.getElementsByClassName("tabla");
     for(let i=0; i<tabla2.length; i++){
         tabla2[i].onclick = () =>{

@@ -1,0 +1,28 @@
+body{
+    display: flex;
+}
+
+img {
+    width: 200px;
+    height: 160px;
+}
+
+#galeria_fotos {
+    width: 600px;
+    height: 100vh;
+}
+
+#main {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#foto_main{
+    width: 400px;
+    height: 300px;
+}

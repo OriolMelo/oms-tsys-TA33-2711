@@ -9,33 +9,32 @@ const regex_email = /^[\w\.-]+\@(\w+)\.(\w){2,3}$/g;
 console.log(regex_email.test("e-m.ai1@hotmail.es"));
 
 //3
-const regex_replace = /(\&)(\")(\<)(\>)/;
+const regex_replace = /(\&)*(\")*(\<)*(\>)*/;
 
 function escapeHTML(text){
-    console.log(text);
     switch(text){
         case "&":
-            text.replace(regex_replace.$1, "&amp");
+            let sustituto = "&amp";
+            console.log(text.replace(regex_replace, "&amp"));
         break;
-        case $2:
-            text.regex_replace($2, "&quot");
+        case "\"":
+            console.log(text.replace(regex_replace, "&quot"));
         break;
-        case $3:
-            text.regex_replace($1, "&lt");
+        case "\<":
+            console.log(text.replace(regex_replace, "&lt"));
         break;
-        case $4:
-            text.regex_replace($1, "&gt");
+        case "\>":
+            console.log(text.replace(regex_replace, "&gt"));
         break;
     }
-    console.log(text);
+
 }
 
-escapeHTML("\&");
+escapeHTML("\>");
 
 //4
 const regex_invert = /(\w+)\s(\w+)/;
 let nombre= "John Smith";
-// console.log(regex_invert.test(nombre));
 console.log(nombre.replace(regex_invert, "$2, $1"));
 
 //5

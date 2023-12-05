@@ -1,0 +1,13 @@
+table{
+    padding: 15px;
+    border: 3px solid blue;
+    background-color: bisque;
+}
+
+input{
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+button{
+    width: 50px;
+}
